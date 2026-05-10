@@ -1,0 +1,21 @@
+name: |-
+  欧易 OKX 汇率面板
+desc: |-
+  在 Stash 面板实时获取并显示欧易 (OKX) 的 USDT/RMB、TRX/RMB 价格。
+author: |-
+  Gemini
+icon: |-
+  https://raw.githubusercontent.com/Toperlock/Quantumult/raw/main/icon/Doraemon/Doraemon-1093.png
+
+tiles:
+  - name: "Crypto_OKX"
+    interval: 1800
+    title: "OKX 汇率"
+    icon: "yensign.circle.fill"
+    backgroundColor: "#000000"
+    timeout: 15
+
+script-providers:
+  "Crypto_OKX":
+    url: "https://gist.githubusercontent.com/qjyjwfn/55db545c0f00cba9ae6afb8e0ba3000e/raw/crypto_okx.js"
+    interval: 86400
