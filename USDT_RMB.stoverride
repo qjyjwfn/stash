@@ -1,0 +1,23 @@
+name: |-
+  USDT & TRX 汇率面板
+desc: |-
+  在 Stash 面板实时获取并显示 USDT/RMB、TRX/RMB 价格。数据来源: CoinGecko。
+author: |-
+  Gemini
+icon: |-
+  https://raw.githubusercontent.com/Toperlock/Quantumult/raw/main/icon/Doraemon/Doraemon-1093.png
+
+tiles:
+  # 面板UI配置
+  - name: "Crypto_RMB_Panel"
+    interval: 1800  # 面板刷新时间 (秒)
+    title: "USDT/TRX 汇率"
+    icon: "yensign.circle.fill"
+    backgroundColor: "#10B981"
+    timeout: 15
+
+script-providers:
+  # 绑定JS脚本
+  "Crypto_RMB_Panel":
+    url: "https://gist.githubusercontent.com/qjyjwfn/4bc03a7c6ce650777c9eb5dbb875fa5f/raw/USDT_RMB.js"
+    interval: 86400
